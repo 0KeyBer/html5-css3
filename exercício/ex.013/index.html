@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos com hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video controls width="500px" poster="imagens/alan.jpg" id="meuvideo">
+        <source src="midia/Alan-pixel-webm.webm" type="video/mp4">
+        <source src="midia/alan-pixel.mp4" type="video/webm">
+        <p>Seu navegador não suporta o vídeo.</p>
+    </video>
+    <audio id="meuaudio">
+        <source src="midia/audio-alan-pixel.mp3" type="audio/mpeg">
+    </audio>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UT3nBrdejTw?si=Gp0OKMD_0XjVItRG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <script>
+        let video =
+        document.getElementById("meuvideo");
+        let audio =
+        document.getElementById("meuaudio");
+
+        video.addEventListener("play", function() {
+            audio.play();
+
+        });
+
+        video.addEventListener("pause", function() {
+            audio.pause();
+
+        });
+
+        video.addEventListener("seeked", function() {
+            audio.currentTime = video.currentTime;
+        });
+    </script>
+</body>
+</html>

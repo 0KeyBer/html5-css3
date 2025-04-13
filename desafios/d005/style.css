@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'name';
+    src: url('fontes/Cakecafe.otf') format('opentype');
+    font-weight: normal;
+}
+:root{
+    --font-name: 'name', arial
+    
+}
+
+h1, h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer p{
+    font-family: var(--font-name);
+    text-align: right;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            /* inset = sombra no interior */
+            box-shadow: 2px 1px 10px black;
+        }
+        nav{
+            font-weight: bold;
+            background-color: rgb(94, 94, 94);
+            padding: 3px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.534);
+        }
+        nav:hover a{
+            display:block;
+            padding-top: 5px;
+            width: 30px;
+           
+        }
+        nav a{
+            display: none;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        nav a:hover{
+            text-decoration: underline;
+
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 4px 4px 9px 0px black;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article aside{
+            background-color: rgb(157, 157, 157);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        footer p{
+            margin: 0px;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav> Links
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Espostes Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda doloribus quam vitae dolores, voluptatum illum esse suscipit, magnam eveniet consectetur corrupti voluptatem explicabo voluptates culpa soluta commodi necessitatibus nobis provident.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por KeyBer</p>
+    </footer>
+
+    <div id="bola"></div>
+    
+</body>
+</html>
